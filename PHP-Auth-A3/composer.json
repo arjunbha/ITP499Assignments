@@ -1,0 +1,16 @@
+{
+    "require": {
+        "monolog/monolog": "1.7.0",
+        "symfony/http-foundation": "2.5.*@dev",
+        "nesbot/carbon": "dev-master"
+    },
+    "autoload": {
+        "classmap" : [
+            "ITP/Auth.php",
+            "ITP/Songs/SongQuery.php"
+        ],
+        "psr-0": {
+            "ITP": "./"
+        }
+    }
+}

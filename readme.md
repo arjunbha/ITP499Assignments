@@ -1,34 +1,6 @@
-### To setup the vm:
+The Vagrantfile comes from: https://github.com/fideloper/Vaprobash. I just enabled the Apache web server. This is set up just to start working with some php files, not Laravel. 
 
-```
-cd into project
-vagrant up
-```
+1. vagrant up
+2. browse to http://192.168.33.10.xip.io/ OR http://192.168.33.10.xip.io/public if this is a Laravel project
 
-browse to http://localhost:3333/phpinfo.php
-
-### To shut down the vm:
-
-```
-vagrant destroy
-```
-
-### To SSH into the vm:
-
-```
-vagrant ssh
-```
-
-run any commands you need to here like composer, php etc
-
-### Windows Installation
-
-Download and install [RubyInstaller __1.9.3__](http://rubyinstaller.org/downloads/) (not 2.0.0). When installing, make sure to check the option that says `Add Ruby executables to your PATH`.
-
-Then install Vagrant and VirtualBox. Following the reboot after the installations, start the command prompt with Ruby and enter the following:
-
-```
-vagrant box add precise32 http://files.vagrantup.com/precise32.box
-```
-
-Vagrant is now ready to run!
+For a Laravel specific setup, visit https://github.com/skaterdav85/vagrant-laravel-env
